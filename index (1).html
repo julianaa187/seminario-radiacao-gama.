@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#081a33">
+<title>Radiação Gama | Física e Medicina</title>
+<style>
+:root{--bg:#071426;--panel:#10243d;--blue:#35c5f3;--gold:#ffd166;--txt:#eef6ff;--muted:#b7c8da}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:linear-gradient(160deg,#071426,#0b1c35 60%,#101d3c);color:var(--txt);font:16px/1.6 Arial,Helvetica,sans-serif}
+header{position:fixed;top:0;z-index:10;width:100%;background:#071426ed;border-bottom:1px solid #29415d;backdrop-filter:blur(10px)}
+nav{max-width:1100px;margin:auto;display:flex;align-items:center;gap:15px;padding:12px 16px;overflow-x:auto}
+nav strong{color:var(--blue);white-space:nowrap;margin-right:8px}
+nav a{color:var(--txt);text-decoration:none;font-size:.86rem;white-space:nowrap}
+nav a:hover{color:var(--gold)}
+main{max-width:1050px;margin:auto;padding:72px 17px 30px}
+section{padding:58px 0 20px;scroll-margin-top:65px}
+.hero{min-height:85vh;display:grid;align-content:center;gap:18px}
+.kicker{color:var(--gold);font-weight:bold;letter-spacing:2px;text-transform:uppercase;font-size:.8rem}
+h1{font-size:clamp(2.5rem,9vw,5.5rem);line-height:1.02;margin:0;max-width:850px}
+h2{font-size:clamp(1.8rem,5vw,2.6rem);margin:0 0 18px;color:var(--blue)}
+h3{margin:0 0 8px;color:var(--gold)}
+p{color:var(--muted);max-width:850px}
+.lead{font-size:1.15rem;max-width:680px}
+.btn{display:inline-block;background:var(--gold);color:#172238;text-decoration:none;font-weight:bold;padding:12px 20px;border-radius:12px;width:max-content}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
+.card{background:linear-gradient(145deg,#142b47,#0e2038);border:1px solid #294563;border-radius:16px;padding:18px}
+.card p{margin-bottom:0}
+.tag{display:inline-block;color:var(--blue);font-size:.78rem;font-weight:bold;margin-bottom:8px}
+.formula{background:#06101f;border:1px solid #31506e;border-radius:14px;padding:18px;font-size:1.3rem;color:var(--gold);overflow-wrap:anywhere}
+.timeline{border-left:2px solid var(--blue);margin-left:8px;padding-left:20px}
+.event{position:relative;margin:0 0 20px}
+.event:before{content:"";position:absolute;left:-27px;top:7px;width:11px;height:11px;background:var(--gold);border-radius:50%}
+.event b{color:var(--gold)}
+.quiz-item{margin:14px 0;padding:16px;border-radius:14px;background:#10243d;border:1px solid #294563}
+.quiz-item p{color:var(--txt);margin:0 0 12px}
+button{border:0;border-radius:9px;padding:9px 16px;margin:3px 6px 3px 0;font-weight:bold;cursor:pointer;background:var(--blue);color:#071426}
+button.secondary{background:#d8e5f2}
+button:disabled{opacity:.55;cursor:default}
+.feedback{min-height:25px;color:var(--gold);font-size:.92rem}
+#score{font-weight:bold;color:var(--gold);font-size:1.1rem}
+.refs a{color:var(--blue);overflow-wrap:anywhere}
+footer{margin-top:50px;padding:26px 18px;text-align:center;background:#050e1c;border-top:1px solid #29415d;color:var(--muted)}
+footer strong{color:var(--txt)}
+.small{font-size:.88rem}
+@media(min-width:700px){main{padding-left:28px;padding-right:28px}.hero{min-height:90vh}}
+</style>
+</head>
+<body>
+<header><nav aria-label="Menu principal">
+<strong>FÍSICA • 3º ANO</strong>
+<a href="#inicio">Início</a><a href="#oque">O que é</a><a href="#fisica">Como funciona</a>
+<a href="#historia">História</a><a href="#aplicacoes">Aplicações</a><a href="#quiz">Fato ou Fake</a>
+<a href="#curiosidades">Curiosidades</a><a href="#referencias">Fontes</a>
+</nav></header>
+<main>
+<section class="hero" id="inicio">
+<span class="kicker">Ciência que atravessa a matéria</span>
+<h1>Radiação gama, medicina nuclear e radioterapia</h1>
+<p class="lead">Como a Física ajuda a enxergar o funcionamento do corpo e a combater doenças usando radiações de alta energia.</p>
+<a class="btn" href="#oque">Começar ↓</a>
+<p class="small">Seminário de Física e Educação Digital • Ensino Médio</p>
+</section>
+
+<section id="oque">
+<h2>1. O que é?</h2>
+<p>A <strong>radiação gama</strong> é uma forma de onda eletromagnética de alta frequência e alta energia. Ela é emitida, por exemplo, quando um núcleo atômico instável libera energia para alcançar uma configuração mais estável. Não possui carga elétrica nem massa de repouso.</p>
+<p>Na <strong>medicina nuclear</strong>, pequenas quantidades de radiofármacos são usadas para acompanhar processos do organismo. A radiação detectada por equipamentos permite formar imagens funcionais. Já a <strong>radioterapia</strong> utiliza radiação ionizante para danificar o DNA de células tumorais e controlar ou destruir tumores, com planejamento para proteger os tecidos saudáveis.</p>
+<p>Essas técnicas têm objetivos diferentes: a medicina nuclear pode ajudar no diagnóstico e também em tratamentos específicos; a radioterapia é uma modalidade de tratamento contra o câncer e pode usar fótons de alta energia, incluindo raios gama ou raios X.</p>
+</section>
+
+<section id="fisica">
+<h2>2. Como funciona? A Física por trás</h2>
+<div class="grid">
+<div class="card"><span class="tag">ONDA ELETROMAGNÉTICA</span><h3>Sem carga elétrica</h3><p>Raios gama são fótons. Por não terem carga, não são desviados diretamente por campos elétricos ou magnéticos, ao contrário de partículas carregadas.</p></div>
+<div class="card"><span class="tag">ENERGIA</span><h3>Alta frequência</h3><p>Quanto maior a frequência de uma onda eletromagnética, maior a energia de cada fóton. A radiação gama pode ionizar átomos e moléculas.</p></div>
+<div class="card"><span class="tag">DETECÇÃO</span><h3>Sinais que viram imagens</h3><p>Na cintilografia, um detector registra fótons emitidos pelo radiofármaco. Em exames PET, detectam-se fótons produzidos após a aniquilação de pósitrons.</p></div>
+</div>
+<p class="formula">E = h · f</p>
+<p><strong>E</strong> = energia de cada fóton, em joules (J); <strong>h</strong> = constante de Planck (aproximadamente 6,626 × 10⁻³⁴ J·s); <strong>f</strong> = frequência da onda, em hertz (Hz). A relação mostra por que frequências maiores correspondem a fótons mais energéticos.</p>
+<p>Na interação com a matéria, a radiação pode transferir energia e provocar ionizações. A absorção depende da energia, do material e da espessura atravessada. Por isso, exames e tratamentos exigem equipamentos calibrados, cálculo de dose e proteção radiológica.</p>
+</section>
+
+<section id="historia">
+<h2>3. Breve histórico</h2>
+<div class="timeline">
+<div class="event"><b>1895 — Wilhelm Conrad Röntgen</b><p>Descobre os raios X, abrindo caminho para o uso médico das radiações.</p></div>
+<div class="event"><b>1896 — Henri Becquerel</b><p>Identifica a radioatividade natural em sais de urânio.</p></div>
+<div class="event"><b>1898 — Marie e Pierre Curie</b><p>Anunciam a descoberta do polônio e do rádio durante pesquisas sobre radioatividade.</p></div>
+<div class="event"><b>1900 — Paul Villard</b><p>Identifica uma radiação muito penetrante emitida pelo rádio, posteriormente chamada de radiação gama.</p></div>
+<div class="event"><b>Década de 1950 — Hal Anger</b><p>Desenvolve a câmera gama, importante para a obtenção de imagens em medicina nuclear.</p></div>
+</div>
+</section>
+
+<section id="aplicacoes">
+<h2>4. Aplicações no dia a dia</h2>
+<div class="grid">
+<div class="card"><span class="tag">DIAGNÓSTICO</span><h3>Cintilografia</h3><p>Um radiofármaco permite observar funções de órgãos, como a atividade da tireoide, dos ossos ou do coração.</p></div>
+<div class="card"><span class="tag">DIAGNÓSTICO</span><h3>PET/CT</h3><p>Ajuda a localizar áreas de maior atividade metabólica e pode contribuir para avaliar câncer e outras condições.</p></div>
+<div class="card"><span class="tag">TRATAMENTO</span><h3>Radioterapia</h3><p>Feixes de radiação são direcionados ao tumor para danificar células cancerosas e reduzir sua capacidade de multiplicação.</p></div>
+<div class="card"><span class="tag">TRATAMENTO</span><h3>Radioiodoterapia</h3><p>O iodo radioativo pode ser usado em situações específicas, como no tratamento de doenças da tireoide, sob indicação médica.</p></div>
+</div>
+</section>
+
+<section id="quiz">
+<h2>5. Fato ou Fake?</h2>
+<p>Leia cada afirmação e escolha uma resposta. No final, confira sua pontuação.</p>
+<div id="questions"></div>
+<p id="score" aria-live="polite">Placar: 0 de 5</p>
+</section>
+
+<section id="curiosidades">
+<h2>6. Curiosidades</h2>
+<div class="grid">
+<div class="card"><h3>1. Invisível aos olhos</h3><p>A radiação gama não pode ser vista, ouvida ou sentida diretamente pelos sentidos humanos.</p></div>
+<div class="card"><h3>2. Não é exclusiva da medicina</h3><p>Também ocorre em fenômenos naturais e em eventos cósmicos de alta energia.</p></div>
+<div class="card"><h3>3. Dose importa</h3><p>O efeito biológico depende da dose absorvida, do tipo de radiação, do tecido e do tempo de exposição.</p></div>
+<div class="card"><h3>4. Proteção planejada</h3><p>Profissionais usam distância, blindagem adequada, controle de tempo e monitoramento para reduzir exposições desnecessárias.</p></div>
+</div>
+</section>
+
+<section id="referencias" class="refs">
+<h2>7. Referências confiáveis</h2>
+<ul>
+<li>CNEN — Comissão Nacional de Energia Nuclear. Informações sobre radiações e proteção radiológica: <a href="https://www.gov.br/cnen/pt-br" target="_blank" rel="noopener">gov.br/cnen</a>.</li>
+<li>INCA — Instituto Nacional de Câncer. Radioterapia: <a href="https://www.gov.br/inca/pt-br" target="_blank" rel="noopener">gov.br/inca</a>.</li>
+<li>IAEA — Agência Internacional de Energia Atômica. Radiation in medicine: <a href="https://www.iaea.org/topics/radiation-in-medicine" target="_blank" rel="noopener">iaea.org/topics/radiation-in-medicine</a>.</li>
+<li>OpenStax. <em>University Physics, Volume 3</em> — ondas eletromagnéticas e física moderna: <a href="https://openstax.org/details/books/university-physics-volume-3" target="_blank" rel="noopener">openstax.org</a>.</li>
+</ul>
+<p class="small">Conteúdo educativo. Exames e tratamentos dependem de avaliação e orientação de profissionais de saúde.</p>
+</section>
+</main>
+<footer>
+<strong>E. E. Veríssimo Teixeira Costa</strong> — Curral de Dentro/MG<br>
+Física e Educação Digital • Prof. Clayton Ramos<br>
+Turma: 3º ano do Ensino Médio (turma a preencher) • Integrantes: (nomes a preencher)
+</footer>
+<script>
+const quiz=[
+{q:"A radiação gama é uma onda eletromagnética.",a:"Fato",why:"É formada por fótons e não possui carga elétrica."},
+{q:"Os raios gama são desviados por campos magnéticos por terem carga negativa.",a:"Fake",why:"Fótons não têm carga elétrica; por isso, não sofrem desvio direto por campos magnéticos."},
+{q:"Na medicina nuclear, radiofármacos podem ajudar a produzir imagens do funcionamento dos órgãos.",a:"Fato",why:"A radiação emitida pelo radiofármaco é detectada por equipamentos e usada para formar imagens."},
+{q:"Toda radioterapia utiliza obrigatoriamente radiação gama.",a:"Fake",why:"Também pode utilizar raios X ou partículas, conforme a técnica e o tratamento."},
+{q:"A radiação ionizante exige cuidados de proteção e controle de dose.",a:"Fato",why:"A exposição precisa ser justificada e otimizada para reduzir riscos desnecessários."}
+];
+let points=0,answered=0;
+const area=document.getElementById("questions");
+quiz.forEach((item,i)=>{
+ const box=document.createElement("div");box.className="quiz-item";
+ const q=document.createElement("p");q.textContent=(i+1)+". "+item.q;box.appendChild(q);
+ const feedback=document.createElement("div");feedback.className="feedback";feedback.setAttribute("aria-live","polite");
+ ["Fato","Fake"].forEach(choice=>{
+  const b=document.createElement("button");b.textContent=choice;
+  b.addEventListener("click",()=>{
+   if(box.dataset.done)return;
+   box.dataset.done="1";answered++;
+   const ok=choice===item.a;if(ok)points++;
+   feedback.textContent=(ok?"Você acertou! ":"Não foi dessa vez. ")+item.why;
+   box.querySelectorAll("button").forEach(x=>x.disabled=true);
+   document.getElementById("score").textContent="Placar: "+points+" de 5 • Respondidas: "+answered+"/5";
+   if(answered===5)document.getElementById("score").textContent+=" — "+(points>=4?"Mandou bem!":"Continue estudando!");
+  });box.appendChild(b);
+ });
+ box.appendChild(feedback);area.appendChild(box);
+});
+</script>
+</body>
+</html>
